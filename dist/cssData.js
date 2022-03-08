@@ -1,11 +1,4 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-body{
-    width: 100vw;
-    height: 100vh;
+const str = `#showArea{
     background-color: rgb(255,230,0);
 }
 .pikachu{
@@ -24,14 +17,14 @@ body{
     padding-top:78px;
     align-items:flex-end;
 }
-.pikachu .eye-nose .eye{
+.eye-nose .eye{
     width:64px;
     height: 64px;
     border:1px solid #000;
     background-color: rgb(46,46,46);
     border-radius: 50%;
 }
-.pikachu .eye-nose .eye::after{
+.eye-nose .eye::after{
     content:'';
     display: block;
     width:25px;
@@ -42,7 +35,7 @@ body{
     margin-top:3px;
     margin-left:8px;
 }
-.pikachu .eye-nose .nose{
+.eye-nose .nose{
     width:28px;
     height: 19px;
     border-radius:9px 9px 0 0;
@@ -51,7 +44,7 @@ body{
     margin-right:76px;
     margin-bottom: 10px;
 }
-.pikachu .eye-nose .nose::after{
+.eye-nose .nose::after{
     content:'';
     display: block;
     width:20px;
@@ -63,21 +56,9 @@ body{
     transform:rotate(45deg);
     margin-top:-6px;
 }
-.pikachu .eye-nose .nose:hover{
+.nose:hover{
     transform-origin: center 100%;
-    -webkit-animation: 200ms linear infinite forwards wave;
-            animation: 200ms linear infinite forwards wave;
-}
-@-webkit-keyframes wave{
-    0%{
-        transform: rotate(0);
-    }33%{
-        transform: rotate(6deg);
-    }66%{
-        transform: rotate(-6deg);
-    }100%{
-        transform: rotate(0);
-    }
+    animation: 200ms linear infinite forwards wave;
 }
 @keyframes wave{
     0%{
@@ -96,14 +77,14 @@ body{
     padding-top:10px;
     align-items: center;
 }
-.pikachu .cheek-mouth .cheek{
+.cheek-mouth .cheek{
     width:88px;
     height: 88px;
     border:3px solid #000;
     background-color: rgb(255,0,0);
     border-radius: 50%;
 }
-.pikachu .cheek-mouth .mouth{
+.cheek-mouth .mouth{
     height: 170px;
     width:200px;
     overflow: hidden;
@@ -111,7 +92,7 @@ body{
     margin-right: 16px;
     position: relative;
 }
-.pikachu .cheek-mouth .mouth .mouth-outline{
+.mouth .mouth-outline{
     width:100px;
     height: 680px;
     border:3px solid #000;
@@ -124,7 +105,7 @@ body{
     background-color: rgb(155,0,10);
     overflow: hidden;
 }
-.pikachu .cheek-mouth .mouth .mouth-outline::after{
+.mouth-outline::after{
     content:'';
     display:block;
     width:92px;
@@ -139,7 +120,7 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.pikachu .cheek-mouth .mouth::before{
+.mouth::before{
     content:'';
     display:block;
     position: absolute;
@@ -153,7 +134,7 @@ body{
     z-index: 2;
     background-color: rgb(255,230,0);
 }
-.pikachu .cheek-mouth .mouth::after{
+.mouth::after{
     content:'';
     display:block;
     position: absolute;
@@ -178,4 +159,5 @@ body{
     .pikachu .cheek-mouth .mouth::before{
         left:1px;
     }
-}
+}`;
+export default str;
