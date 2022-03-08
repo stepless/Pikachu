@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绘制皮卡丘</title>
+    <style id="dome"></style>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        #textArea{
+            padding:15px;
+            box-sizing: border-box;
+            height: 50vh;
+            overflow-y:auto;
+            border-bottom: 2px solid black;
+        }
+        #showArea{
+            height: 50vh; 
+            overflow:hidden;
+            position:relative;
+        }
+        #textArea::-webkit-scrollbar {
+            display: none; /* Chrome Safari */
+        }
+        #but{
+            display:flex;
+            flex-direction:column;
+            position:fixed;
+            top:0;
+            right:0;
+            padding: 20px 30px;
+            z-index: 3;
+        }
+        #but button{
+            padding:5px 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="textArea"></div>
+    <div id="but">
+        <button id="pause">暂停</button>
+        <button id="play">播放</button>
+        <button id="speediness">快速</button>
+        <button id="normalSpeed">中速</button>
+        <button id="lowSpeed">慢速</button>
+        <button id="rebroadcast">重播</button>
+    </div>
+    <div id="showArea">
+            <div class="pikachu">
+                <div class="eye-nose">
+                    <div class="eye left"></div>
+                    <div class="nose">
+                    </div>
+                    <div class="eye right"></div>
+                </div>
+                <div class="cheek-mouth">
+                    <div class="cheek left"></div>
+                    <div class="mouth">
+                        <div class="mouth-outline">
+        
+                        </div>
+                    </div>
+                    <div class="cheek right"></div>
+                </div>
+            </div>
+    </div>
+    <script src="/main.b09a8382.js"></script>
+</body>
+</html>
